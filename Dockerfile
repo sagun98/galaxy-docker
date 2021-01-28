@@ -59,6 +59,7 @@ VOLUME ["/export/", "/data/", "/var/lib/docker"]
 EXPOSE :80
 EXPOSE :21
 EXPOSE :8800
+EXPOSE :8080
 
 # Autostart script that is invoked during container start
 CMD ["/usr/bin/startup"]

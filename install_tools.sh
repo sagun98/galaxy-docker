@@ -5,26 +5,26 @@ source $GALAXY_VIRTUAL_ENV/bin/activate
 cd /galaxy-central/tools
 
 # metaphlan2 and metaphlan2 galaxy installation
-git clone https://github.com/biobakery/metaphlan2.git
-git clone https://github.com/biobakery/galaxy_metaphlan2.git
-cp galaxy_metaphlan2/metaphlan2.xml metaphlan2
+# git clone https://github.com/biobakery/metaphlan2.git
+# git clone https://github.com/biobakery/galaxy_metaphlan2.git
+# cp galaxy_metaphlan2/metaphlan2.xml metaphlan2
 
 # graphlan and graphlan galaxy installation
-git clone https://github.com/biobakery/graphlan.git
-git clone https://github.com/biobakery/galaxy_graphlan.git
-cp -r graphlan/pyphlan /galaxy-central/lib/
-cp -r galaxy_graphlan/* graphlan/
+# git clone https://github.com/biobakery/graphlan.git
+# git clone https://github.com/biobakery/galaxy_graphlan.git
+# cp -r graphlan/pyphlan /galaxy-central/lib/
+# cp -r galaxy_graphlan/* graphlan/
 
 # Install metaphlan3
-git clone https://github.com/biobakery/MetaPhlAn.git
-git clone https://github.com/biobakery/galaxy_metaphlan3.git
-cd MetaPhlAn
-git checkout 3.0
-ls
-pip install .
-metaphlan --install
-cd ..
-cp -r galaxy_metaphlan3/metaphlan3.xml metaphlan3
+# git clone https://github.com/biobakery/MetaPhlAn.git
+# git clone https://github.com/biobakery/galaxy_metaphlan3.git
+# cd MetaPhlAn
+# git checkout 3.0
+# ls
+# pip install .
+# metaphlan --install
+# cd ..
+# cp -r galaxy_metaphlan3/metaphlan3.xml metaphlan3
 
 # git clone git://github.com/picrust/picrust.git picrust
 # git clone https://github.com/biobakery/picrust-cmd.git
